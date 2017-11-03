@@ -1,3 +1,3 @@
-# SoBlessed Admin Portal
+# Firebase Controlled Light
 
-This is the code repository for SoBlessed Administration Portal Tool
+Control LED lights using firebase
