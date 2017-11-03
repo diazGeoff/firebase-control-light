@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "xerkit-firebase-hackday",
+  "private_key_id": "edc3d000eee4df6891aa916841c35332bc1a21b4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKDqneOLuM33vK\nRzVToJHBzbtYSoUfJZVkbEIk1avWRwSyeD6NeaD2mPhGIvi8qyzx2ZQ5T1BHLn2B\nSI8Jtzk65GYMuhADS8KuT97EnnwPENvzDFA6qr6wTb1Vyed8pfdkaZOOONJcKYKt\nIea2iOv0LgVXqRSnlSfW5a8wMNvrenZFTvrwsBIaLpZM+rgGNavtAHdVe0w0bJUV\njCrikGEXgj9UuC9/H57sdl5sIpiLksRgOGnAecdbPFUrbnMXSpzxnXJR38O8BTTD\nZeq1+YcjNiWRSIXKnnb4TMrArHs66GvANraZZcncpBJHwsPvr9WM7mtb4M5iSodt\nFpctNTzFAgMBAAECggEAGw8Qp45Qa4KoOMQFe7AGpP4Qpze/kRa+5WZsCzPEIdt7\n4QyiT97oc+2zXe0kA1wnFjJNm8kn1oh+zTfy09nCI8VfdzfZmh9ksGRI0Grq8TeQ\nRQGyotCn3cNjZiA2TGaLdVqAJK0uWqJCej4OgAZhFt+s3nrppbGfVrOGnP0GDogo\nTx2N1bVOsQTJAMAE5JGA8wLZIfj/o47YpfkXBbeR2RMHEVzNV8Wxm2rDAuHUXMpq\nBtyqSB4vyNb1tlAg2ydcic+pbZAGYlwrfgVjY+mZA66iU8WkrcW5UPSfuLZfYqWl\naPLfyHXvapb+KKk+GMvzlsIF0ZSHnta6g/lWsXcQBwKBgQDy9tq1zPyoS55yfYFH\n/NH3bm0vd/w3aLRhDAn1bEWfQ+twq6N4ttQwi/I8vCxNShINXoyC9wLreuhSG+7O\noZ0WF+hb6OYvgpUUZuya0R9Ycq8JLWvxtQu+kj6zrli5msshLPh7Rk0nNUDS+P/H\ne6Q0Bx0ht13z2o/JQoW8XtJsywKBgQDU5fJEI9tr1tVE8fdAy5VzsgyxEVcSreyO\nJRSuHCDpn4bCoa0DTfllvWS4CKPP4gZ1iy6lf7n6qcZ/fJg2UxtBEtfdRsLjmJXF\n5zgBdwC+5FeB08w7FAA3qCr6BjRtG7dftIfvPhpYZ2iXr0T/oa25rtcXC9xStaGH\n2RoEISjarwKBgEtnBvtS8bp9NWBMyPmBYdxLXgFUWGcNzKUtqk2LW5QQ7RmbevE0\ntGeYlwX4VDtsWGvjwvHGHRbdnwoUdymTiH/ZzZfwkLd/7CpXwuhNLFAzz1SmzxBF\nYq6zDliPLCP2AUJ7hWYkrD8VzNdsxVywZ4ZqCsVy9ep/Ew6f4YdTWjS/AoGBAJNI\nCJOvIqq10pCBvAUtUdTaBgGw90XK4G1tpaLVfsdgPwACjQhONwx1O2o9P+YefU1v\n3fNMK0MHlHS5oythzubzvDYuL8D33BUu4gXRZ8ineworlYwBSC04v5J8HGSm2fLx\nl2Cg2+TwlODqtZcLKH3eQJqG8AKf+IFcZa0Zq4OtAoGAHC04kgTzUQ2cVnLS7eNJ\nvYLBqxLYxVk3ecbmGhLh9C5Prs0FUho4Twvg+JTRFJbzdFzDniWsTz7ZHtm5+KnB\n7uw3t0qCBD/1FuUogkQP8V1HOlJ1MZeWSpFIJENW9duqOOfXadtTuz/DJi133Qxf\nIPTnal7o4uxHXzjR/hm9xK8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "xerkithackday@xerkit-firebase-hackday.iam.gserviceaccount.com",
+  "client_id": "106918222645873706955",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/xerkithackday%40xerkit-firebase-hackday.iam.gserviceaccount.com"
+}

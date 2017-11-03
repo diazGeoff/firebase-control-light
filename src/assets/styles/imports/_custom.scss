@@ -1,0 +1,173 @@
+/* Only demo */
+@media (max-width: 1000px) {
+  .welcome-message {
+    display: none;
+  }
+}
+
+.sk-spinner-three-bounce div {
+  background-color: #00f100 !important;
+}
+
+#reset-dashboard-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* XERKIT */
+.xerkit {
+  position: fixed;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #00f100;
+}
+
+svg {
+  display: block;
+  position: absolute;
+}
+
+.board01 {
+  
+}
+
+.board02 {
+  top: -478px;
+  left: 493px; 
+}
+
+.board03 {
+  top: 0;
+  left: 493px;
+}
+
+.board04 {
+  top: -478px;
+  left: 0px;
+}
+
+.board05 {
+  top: 0;
+  left: 979px; 
+}
+
+.board06 {
+  top: -486px;
+  left: 1000px; 
+}
+
+polyline,
+line {
+  stroke: rgba(255,255,255,.33);
+  stroke-width: 2px;
+}
+
+circle,
+rect,
+path {
+  stroke: rgba(255,255,255,.15);
+  stroke-width: 2px; 
+}
+
+[id*="chip"],
+[id*="pin"] {
+  opacity: 0;
+  animation: fadein 2s ease-out forwards;
+}
+
+[id*="_9px"] {
+  stroke-dasharray: 9; 
+  stroke-dashoffset: 9;
+  animation: dash9 5s linear forwards; 
+}
+
+[id*="_9px"]:after {
+  content: "";
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 .125em rgba(255,255,0,.5);
+}
+
+[id*="_10px"]{
+  stroke-dasharray: 10; 
+  stroke-dashoffset: 10;
+  animation: dash10 5s linear forwards; 
+}
+
+[id*="_29px"] {
+  stroke-dasharray: 29; 
+  stroke-dashoffset: 29;
+  animation: dash29 1s linear forwards; 
+}
+
+[id*="_36px"] {
+  stroke-dasharray: 36; 
+  stroke-dashoffset: 36;
+  animation: dash36 1s linear forwards; 
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    fill: rgba(255,255,255,0);
+    stroke: rgba(255,255,255,0);
+  }
+  75% {
+    opacity: 1;
+    fill: rgba(0,0,0,.15);
+    stroke: rgba(0,0,0,.05);
+  }
+  100% {
+    opacity: .75;
+    fill: rgba(0,0,0,.15);
+    stroke: rgba(0,0,0,.05);
+  }
+}
+
+@keyframes dash9 {
+  from {
+    stroke-dashoffset: 10;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash10 {
+  0% {
+    stroke-dashoffset: 10;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash29 {
+  0% {
+    stroke-dashoffset: 29;
+  }
+  75% {
+    stroke-dashoffset: 0;
+    fill: rgba(255,255,255,0);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: rgba(255,255,255,.3);
+  }
+}
+
+@keyframes dash36 {
+  from {
+    stroke-dashoffset: 36;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
