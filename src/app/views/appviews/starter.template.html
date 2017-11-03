@@ -18,15 +18,15 @@
 
     <div class="row" marginTop="10%">
         <div class="col-sm-4">
-            <img src="../../assets/images/bulb-icons/empty_bulb.png" class="img-circle circle-border m-b-md" alt="profile" height="200"
+            <img [src]="redLight" class="img-circle circle-border m-b-md" alt="profile" height="200"
                 width="200">
         </div>
         <div class="col-sm-4">
-            <img src="../../assets/images/bulb-icons/empty_bulb.png" class="img-circle circle-border m-b-md" alt="profile" height="200"
+            <img [src]="yellowLight" class="img-circle circle-border m-b-md" alt="profile" height="200"
                 width="200">
         </div>
         <div class="col-sm-4">
-            <img src="../../assets/images/bulb-icons/empty_bulb.png" class="img-circle circle-border m-b-md" alt="profile" height="200"
+            <img [src]="greenLight" class="img-circle circle-border m-b-md" alt="profile" height="200"
                 width="200">
         </div>
     </div>
@@ -35,7 +35,7 @@
         <div class="col-sm-4">
             <div class="switch">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="emptybulb" class="onoffswitch-checkbox" id="emptybulb">
+                    <input type="checkbox" [(ngModel)]="lightData.red" (change)="changeLightStatus()" name="emptybulb" class="onoffswitch-checkbox" id="emptybulb">
                     <label class="onoffswitch-label" for="emptybulb">
                         <span class="onoffswitch-inner"></span>
                         <span class="onoffswitch-switch"></span>
@@ -46,7 +46,7 @@
         <div class="col-sm-4">
             <div class="switch">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="greenbulb" class="onoffswitch-checkbox" id="greenbulb">
+                    <input type="checkbox" [(ngModel)]="lightData.yellow" (change)="changeLightStatus()" name="greenbulb" class="onoffswitch-checkbox" id="greenbulb">
                     <label class="onoffswitch-label" for="greenbulb">
                         <span class="onoffswitch-inner"></span>
                         <span class="onoffswitch-switch"></span>
@@ -57,7 +57,7 @@
         <div class="col-sm-4">
             <div class="switch">
                 <div class="onoffswitch">
-                    <input type="checkbox" name="yellowbulb" class="onoffswitch-checkbox" id="yellowbulb">
+                    <input type="checkbox" [(ngModel)]="lightData.green" (change)="changeLightStatus()" name="yellowbulb" class="onoffswitch-checkbox" id="yellowbulb">
                     <label class="onoffswitch-label" for="yellowbulb">
                         <span class="onoffswitch-inner"></span>
                         <span class="onoffswitch-switch"></span>
