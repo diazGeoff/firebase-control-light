@@ -11,13 +11,12 @@ export const listener = functions.https.onRequest((req, res) => {
     var request = cors(corsOption)
 
     request(req, res, async () => {
-        let postData = req.body
-        admin.database().ref("employee").push(postData)
-            .then((result) => {
-                res.status(200).json(result);
-            })
-            .catch((error) => {
-                res.status(400).json(error);
-            })
+        let color = req.query.color
+        let value = parseInt(req.query.value)
+
+        admin.database().ref(`lights/${color}`).set(value)
+        res.status(200).json({
+            "status": "success"
+        });
     })
 })

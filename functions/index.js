@@ -84,11 +84,11 @@ module.exports = require("firebase-admin");
 // src/index.ts
 const functions = __webpack_require__(0);
 const admin = __webpack_require__(1);
-const UserFunction = __webpack_require__(3);
+const LightFunction = __webpack_require__(3);
 admin.initializeApp(functions.config().firebase);
 // export const addMessage = AddMessage.listener;
 // export const makeUpperCase = UpCaseMessages.listener;
-exports.userFunction = UserFunction.listener;
+exports.lightFunction = LightFunction.listener;
 
 
 /***/ }),
@@ -114,13 +114,11 @@ const corsOption = {
 exports.listener = functions.https.onRequest((req, res) => {
     var request = cors(corsOption);
     request(req, res, () => __awaiter(this, void 0, void 0, function* () {
-        let postData = req.body;
-        admin.database().ref("employee").push(postData)
-            .then((result) => {
-            res.status(200).json(result);
-        })
-            .catch((error) => {
-            res.status(400).json(error);
+        let color = req.query.color;
+        let value = parseInt(req.query.value);
+        admin.database().ref(`lights/${color}`).set(value);
+        res.status(200).json({
+            "status": "success"
         });
     }));
 });
