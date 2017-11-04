@@ -50,7 +50,7 @@ export class LoginComponent {
 
   anonymous() {
     this.afAuth.auth.signInAnonymously().then((userResult: firebase.User) => {
-      this.isLoggingIn = false;    
+      this.isLoggingIn = false;
       console.log("Success Login!", userResult);
       this.prepareOnSuccessLogin(userResult);
     }).catch(error => {

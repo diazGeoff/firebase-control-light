@@ -3,6 +3,11 @@ import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from "rxjs/Subscription";
 import { AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
 
+interface Employee {
+  name: string;
+  position: string;
+}
+
 @Component({
   selector: 'starter',
   templateUrl: 'starter.template.html'
@@ -11,21 +16,20 @@ export class StarterViewComponent implements OnDestroy, OnInit {
 
   public nav: any;
   lightStatus: FirebaseObjectObservable<any>;
+  employeeList: FirebaseListObservable<Employee[]>;
   lightStatusSubscription: Subscription;
+  employeeListSubscription: Subscription;
   lightData: any = {
     red: 0,
     yellow: 0,
     green: 0
   };
   lightBulbUrl: string = "../../assets/images/bulb-icons/";
-  // users: FirebaseListObservable<any[]>;
-  // user: FirebaseObjectObservable<any>;
 
   public constructor(db: AngularFireDatabase, private _router: Router, private _ngZone: NgZone) {
     this.nav = document.querySelector('nav.navbar');
     this.lightStatus = db.object("lights");
-    // db.object('')
-    // this.users = db.list('/users');
+    this.employeeList = db.list("employee");
   }
 
   public ngOnInit(): any {
@@ -34,6 +38,10 @@ export class StarterViewComponent implements OnDestroy, OnInit {
 
     this.lightStatusSubscription = this.lightStatus.subscribe(snapshot => {
       this.lightData = snapshot;
+    });
+
+    this.employeeListSubscription = this.employeeList.subscribe((snapshot: Employee[]) => {
+      console.log(snapshot);
     });
   }
 
@@ -62,5 +70,6 @@ export class StarterViewComponent implements OnDestroy, OnInit {
   public ngOnDestroy(): any {
     this.nav.classList.remove("white-bg");
     this.lightStatusSubscription.unsubscribe();
+    this.employeeListSubscription.unsubscribe();
   }
 }
